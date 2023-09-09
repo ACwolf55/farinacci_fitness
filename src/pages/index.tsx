@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex h-screen flex-col items-center justify-start">
           <article className="max-w-screen-xl p-8 text-center">
             <h3 className="text-4xl font-extrabold">
-              IT'S TIME TO PUT YOURSELF FIRST
+              IT IS TIME TO PUT YOURSELF FIRST
             </h3>
             <p>
               We work with men and women that have let fitness slide down their
