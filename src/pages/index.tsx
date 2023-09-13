@@ -17,7 +17,7 @@ export default function Home() {
             style={{ backgroundImage: `url(${bgImage.src})` }}
           >
             <div className="font-oswald w-full text-left md:w-1/2">
-              <p className="text-2xl font-bold text-red-600 md:text-3xl">
+              <p className="text-3xl font-bold text-red-600 md:text-3xl">
                 Online, group or 1 on 1 training
               </p>
               <p className="text-lg text-white md:text-xl">
