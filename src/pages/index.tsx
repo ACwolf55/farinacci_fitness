@@ -21,7 +21,7 @@ export default function Home() {
                 Online, group or 1 on 1 training
               </p>
               <p className="text-lg text-white md:text-xl">
-                The number one Personal Training Studio in Depew, helping men
+                The number one Personal Training Studio in Lockport, helping men
                 and women to get in the best shape of their lives and achieving
                 your body and strength goals
               </p>
