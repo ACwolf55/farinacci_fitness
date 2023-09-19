@@ -41,7 +41,7 @@ function programs() {
     <div className="text-center md:text-left">
       <h3 className="text-xl font-semibold">Power Build Program</h3>
       <p className="mt-4 text-gray-700">
-        Get JACK3D leggo
+        Build muscle size, definition and strength
       </p>
       <div className="mt-4 text-center md:text-left">
         <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button>

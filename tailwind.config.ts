@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         sans: ['var(--font-anek) '],
       },
+  
     },
   },
   plugins: [],
