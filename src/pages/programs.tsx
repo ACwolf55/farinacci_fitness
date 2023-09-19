@@ -17,7 +17,7 @@ function programs() {
         Guided personal program with follow-up for every workout
       </p>
       <div className="mt-4 text-center md:text-left">
-        <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button>
+        {/* <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button> */}
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ function programs() {
         Focusing on Olympic lifts and forms to build power and athletic performance
       </p>
       <div className="mt-4 text-center md:text-left">
-        <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button>
+        {/* <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button> */}
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ function programs() {
         Build muscle size, definition and strength
       </p>
       <div className="mt-4 text-center md:text-left">
-        <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button>
+        {/* <button className="py-1 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300">Learn More</button> */}
       </div>
     </div>
   </div>
