@@ -12,7 +12,7 @@ function successStories() {
       <h2 className="bg-yellow-500 text-white p-2 rounded-full text-2xl">
         <span className="text-2xl mr-2">&#9888;</span> PAGE UNDER CONSTRUCTION &#9888;
       </h2>
-      <h2 className="text-2xl mt-8 mb-8 sm:mb-4">successStories</h2>
+      <h2 className="text-2xl mt-8 mb-8 sm:mb-4">Success Stories and (Reviews)?</h2>
       <ul className="space-y-2">
         <li>Tyson</li>
         <li>Sherrief?</li>

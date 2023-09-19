@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState,useEffect } from "react";
 import Header from "~/components/Header";
 import bgImage from "../../public/frank-gym.jpg";
 import VideoFeed from "~/components/VideoFeed";
@@ -10,6 +11,23 @@ import { api } from "~/utils/api";
 
 export default function Home() {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // You can adjust the threshold (768) as needed.
+
+  // Update the isMobile state when the window is resized.
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768); // You can adjust the threshold (768) as needed.
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount.
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
 
   return (
     <>
@@ -44,15 +62,18 @@ export default function Home() {
         </div>
 
         <div className="flex h-screen items-center justify-center">
-          <article className="flex h-full w-full max-w-screen-xl flex-wrap justify-around bg-red-700 p-8 text-white">
-            {videoData.map((item, index) => (
-              <VideoFeed
-                key={index}
-                description={item.description}
-                embedCode={item.src}
-              />
-            ))}
-          </article>
+        <article className="flex h-full w-full max-w-screen-xl bg-red-700 p-8 text-white">
+    <div className="overflow-x-auto flex">
+      {videoData.map((item, index) => (
+        <VideoFeed
+          key={index}
+          description={item.description}
+          embedCode={item.src}
+        />
+      ))}
+    </div>
+  </article>
+
         </div>
 
         <div className="flex h-screen flex-col items-center justify-start">

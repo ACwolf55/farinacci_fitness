@@ -8,7 +8,7 @@ function About() {
     <div>
   <Header />
     <article className="h-full w-full max-w-screen-xl bg-red-700 p-8 text-white">
-      <div className="flex flex-row items-center">
+    <div className="flex flex-col md:flex-row items-center">
         <div className="relative h-full w-24 md:w-32 mr-4 border-2 border-gray-400">
           <div
             className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-400 to-gray-600"
