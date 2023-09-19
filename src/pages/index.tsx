@@ -60,9 +60,7 @@ export default function Home() {
   <h3 className="text-4xl font-extrabold">
     IT IS TIME TO PUT YOURSELF FIRST
   </h3>
-  <p className="mb-4"> {/* Added margin-bottom */}
-    We work with men and women that have let fitness slide down their
-    list of priorities, and want to make a change
+  <p className="mb-4">
   </p>
 
   <Link href="/contact">
