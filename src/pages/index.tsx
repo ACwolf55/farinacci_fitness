@@ -3,6 +3,8 @@ import Header from "~/components/Header";
 import bgImage from "../../public/frank-gym.jpg";
 import VideoFeed from "~/components/VideoFeed";
 import { videoData } from "~/videoData";
+import Link from "next/link";
+import Footer from "~/components/Footer";
 
 import { api } from "~/utils/api";
 
@@ -38,37 +40,41 @@ export default function Home() {
               Its about drive its about power we stay hunger we devour put in
               the work put in the hours and TAKE WHATS OURS
             </p>
-            </article>
-            </div>
-
-            <div className="flex h-screen items-center justify-center">
-  <article className="flex flex-wrap justify-around h-full w-full max-w-screen-xl bg-red-700 p-8 text-white">
-    {videoData.map((item,index) => (
-      <VideoFeed
-        key={index}
-        description={item.description}
-        embedCode={item.src}
-      />
-    ))}
-  </article>
-</div>
-
-
-        <div className="flex h-screen flex-col items-center justify-start">
-          <article className="max-w-screen-xl p-8 text-center">
-            <h3 className="text-4xl font-extrabold">
-              IT IS TIME TO PUT YOURSELF FIRST
-            </h3>
-            <p>
-              We work with men and women that have let fitness slide down their
-              list of priorities, and want to make a change
-            </p>
-            <button className="red-700 rounded-full px-8 py-2 ">
-              Try Us Out
-            </button>
           </article>
         </div>
+
+        <div className="flex h-screen items-center justify-center">
+          <article className="flex h-full w-full max-w-screen-xl flex-wrap justify-around bg-red-700 p-8 text-white">
+            {videoData.map((item, index) => (
+              <VideoFeed
+                key={index}
+                description={item.description}
+                embedCode={item.src}
+              />
+            ))}
+          </article>
+        </div>
+
+        <div className="flex h-screen flex-col items-center justify-start">
+        <article className="max-w-screen-xl p-8 text-center">
+  <h3 className="text-4xl font-extrabold">
+    IT IS TIME TO PUT YOURSELF FIRST
+  </h3>
+  <p className="mb-4"> {/* Added margin-bottom */}
+    We work with men and women that have let fitness slide down their
+    list of priorities, and want to make a change
+  </p>
+
+  <Link href="/contact">
+    <button className="rounded-full bg-red-700 px-8 py-2 text-white transition duration-300 ease-in-out hover:bg-red-800">
+      Try Us Out
+    </button>
+  </Link>
+</article>
+
+        </div>
       </main>
+      <Footer/>
     </>
   );
 }

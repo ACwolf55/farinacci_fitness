@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '~/components/Header'
+import Footer from "~/components/Footer";
 
 function programs() {
   return (
@@ -50,7 +51,7 @@ function programs() {
   </div>
 </div>
 
-
+<Footer/>
     </div>
   )
 }
