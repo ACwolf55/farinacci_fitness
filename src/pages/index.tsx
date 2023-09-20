@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center">
-          <article className="h-[30vh] w-full max-w-screen-xl bg-red-700 p-8 text-white">
+          <article className="h-[30vh] w-full bg-red-700 p-8 text-white">
             <h3 className="text-4xl font-extrabold">LEARN HOW TO BE MORE</h3>
             <p>
               Its about drive its about power we stay hunger we devour put in
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         <div className="flex h-screen items-center justify-center">
-        <article className="flex h-full w-full max-w-screen-xl bg-red-700 p-8 text-white">
+        <article className="flex h-full w-full  bg-red-700 p-8 text-white">
     <div className="overflow-x-auto flex">
       {videoData.map((item, index) => (
         <VideoFeed

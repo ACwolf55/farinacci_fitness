@@ -7,7 +7,7 @@ function About() {
   return (
     <div>
       <Header />
-      <article className="h-full w-full max-w-screen-xl bg-red-700 p-8 text-white">
+      <article className="h-full bg-red-700 p-8 text-white">
         <div className="flex flex-col md:flex-row items-center">
           <div className="relative h-full w-24 md:w-32 mr-4 border-2 border-gray-400">
             <div
