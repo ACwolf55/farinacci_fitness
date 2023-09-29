@@ -35,7 +35,7 @@ export default function Home() {
               <br/>
               <p className="text-lg text-white md:text-xl xl:text-2xl">
                 Located in Lockport ~ Helping men and women become the
-                strongest version of themselve s&#128170;
+                strongest version of themselves&#128170;
               </p>
             </div>
           </div>
