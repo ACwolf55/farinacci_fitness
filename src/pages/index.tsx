@@ -10,7 +10,6 @@ import { api } from "~/utils/api";
 
 export default function Home() {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
-  
 
   return (
     <>
@@ -22,13 +21,21 @@ export default function Home() {
             style={{ backgroundImage: `url(${bgImage.src})` }}
           >
             <div className="font-oswald w-full text-left md:w-1/2">
-              <p className="text-3xl font-bold text-red-600 md:text-3xl">
-                Online, group or 1 on 1 training
-              </p>
-              <p className="text-lg text-white md:text-xl">
-                The number one Personal Training Studio in Lockport, helping men
-                and women to get in the best shape of their lives and achieving
-                your body and strength goals
+              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-6xl">
+                Online,
+                Group,
+              </h2>
+              
+              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-6xl">
+               & 1 on 1
+              </h2>
+              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-6xl">
+               Personal Training
+              </h2>
+              <br/>
+              <p className="text-lg text-white md:text-xl xl:text-2xl">
+                Located in Lockport ~ Helping men and women become the
+                strongest version of themselve s&#128170;
               </p>
             </div>
           </div>
@@ -45,38 +52,35 @@ export default function Home() {
         </div>
 
         <div className="flex h-screen items-center justify-center">
-        <article className="flex h-full w-full  bg-red-700 p-8 text-white">
-    <div className="overflow-x-auto flex">
-      {videoData.map((item, index) => (
-        <VideoFeed
-          key={index}
-          description={item.description}
-          embedCode={item.src}
-        />
-      ))}
-    </div>
-  </article>
-
+          <article className="flex h-full w-full p-4  bg-red-700 p-8 text-white">
+            <div className="flex overflow-x-auto">
+              {videoData.map((item, index) => (
+                <VideoFeed
+                  key={index}
+                  description={item.description}
+                  embedCode={item.src}
+                />
+              ))}
+            </div>
+          </article>
         </div>
 
         <div className="flex h-screen flex-col items-center justify-start">
-        <article className="max-w-screen-xl p-8 text-center">
-  <h3 className="text-4xl font-extrabold">
-    IT IS TIME TO PUT YOURSELF FIRST
-  </h3>
-  <p className="mb-4">
-  </p>
+          <article className="max-w-screen-xl p-8 text-center">
+            <h3 className="text-4xl font-extrabold">
+              IT IS TIME TO PUT YOURSELF FIRST
+            </h3>
+            <p className="mb-4"></p>
 
-  <Link href="/contact">
-    <button className="rounded-full bg-red-700 px-8 py-2 text-white transition duration-300 ease-in-out hover:bg-red-800">
-      Try Us Out
-    </button>
-  </Link>
-</article>
-
+            <Link href="/contact">
+              <button className="rounded-full bg-red-700 px-8 py-2 text-white transition duration-300 ease-in-out hover:bg-red-800">
+                Try Us Out
+              </button>
+            </Link>
+          </article>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

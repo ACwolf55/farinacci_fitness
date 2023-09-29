@@ -9,3 +9,8 @@
     background-position: center;
     /* Add any other background properties as needed */
   }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
