@@ -35,8 +35,8 @@ function Header() {
       <Link href="/programs" className={`block mt-2 md:inline-block md:mt-0 md:ml-4 ${router.pathname === '/programs' ? 'text-blue-500' : 'hover:text-blue-500'}`}>
         Programs
       </Link>
-      <Link href="/successStories" className={`block mt-2 md:inline-block md:mt-0 md:ml-4 ${router.pathname === '/successStories' ? 'text-blue-500' : 'hover:text-blue-500'}`}>
-        Success Stories
+      <Link href="/reviews" className={`block mt-2 md:inline-block md:mt-0 md:ml-4 ${router.pathname === '/reviews' ? 'text-blue-500' : 'hover:text-blue-500'}`}>
+        Reviews
       </Link>
       <Link href="/contact" className={`block mt-2 md:inline-block md:mt-0 md:ml-4 ${router.pathname === '/contact' ? 'text-blue-500' : 'hover:text-blue-500'}`}>
         Contact
