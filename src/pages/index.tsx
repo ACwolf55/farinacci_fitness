@@ -21,22 +21,17 @@ export default function Home() {
             style={{ backgroundImage: `url(${bgImage.src})` }}
           >
             <div className="font-oswald w-full text-left md:w-1/2">
-              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-6xl">
-                Online,
-                Group,
+              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
+                Online, Group,
               </h2>
-              
-              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-6xl">
-               & 1 on 1
+
+              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
+                & 1 on 1
               </h2>
-              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-6xl">
-               Personal Training
+
+              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
+                Personal Training
               </h2>
-              <br/>
-              <p className="text-lg text-white md:text-xl xl:text-2xl">
-                Located in Lockport ~ Helping men and women become the
-                strongest version of themselves&#128170;
-              </p>
             </div>
           </div>
         </div>
@@ -52,7 +47,7 @@ export default function Home() {
         </div>
 
         <div className="flex h-screen items-center justify-center">
-          <article className="flex h-full w-full p-4  bg-red-700 p-8 text-white">
+          <article className="flex h-full w-full bg-red-700  p-4 p-8 text-white">
             <div className="flex overflow-x-auto">
               {videoData.map((item, index) => (
                 <VideoFeed
