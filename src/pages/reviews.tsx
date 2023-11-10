@@ -31,6 +31,13 @@ function reviews() {
           <p className="text-gray-100 mb-4">From Tyson:</p>
           <p className="text-white">&quot;Frank has helped me gain an insane amount with his program and I&rsquo;ve put on a crazy amount of muscle working with him. He pushes me to go beyond.&quot;</p>
         </div>
+
+        <div className="bg-red-600 p-8 rounded-lg shadow-lg">
+          <p className="text-gray-100 mb-4">From Jordan:</p>
+          <p className="text-white">&quot;When I first met frank, I had no dietary knowledge, no weightlifting knowledge, and I would only bench press every day. Luckily (thanks to a great training plan) I was able to not only reach my goals, but pass them with flying colors. If you’re looking for an attentive and supportive trainer, FRANK’S YOUR GUY!!! &quot;</p>
+        </div>
+
+
         </div>
       </div>
     </section>
