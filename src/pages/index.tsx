@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Head from "next/head";
 import Header from "~/components/Header";
 import bgImage from "../../public/frank-gym.jpg";
@@ -10,6 +11,13 @@ import { api } from "~/utils/api";
 
 export default function Home() {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const [slideIn, setSlideIn] = useState(false);
+
+  useEffect(() => {
+    // Trigger slide-in effect on mount
+    setSlideIn(true);
+  }, []);
+
 
   return (
     <>
@@ -20,7 +28,8 @@ export default function Home() {
             className="flex h-64 items-center justify-end bg-cover p-8 md:h-96"
             style={{ backgroundImage: `url(${bgImage.src})` }}
           >
-            <div className="font-oswald w-full text-left md:w-1/2">
+            <div className={`font-oswald w-full text-left md:w-1/2 transition-transform ease-in-out duration-500 ${
+        slideIn ? 'translate-x-0' : '-translate-x-full'}`}>
               <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
                 Online, Group,
               </h2>

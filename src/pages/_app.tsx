@@ -20,6 +20,11 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           name="description"
           content="Online and in-person personal training"
         />
+         <meta property="og:title" content="Farinacci Fitness" />
+      <meta property="og:description" content="Online and in-person personal training, Lockport New York buffalo fitness" />
+      <meta property="og:image" content="/FarinacciFitnessLogo.jpg" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://www.FarinacciFitness.com/FarinacciFitnessLogo.jpg" />
         <link rel="icon" href="/FarinacciFitnessLogo.jpg" />
         
       </Head>
