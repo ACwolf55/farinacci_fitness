@@ -28,17 +28,17 @@ export default function Home() {
             className="flex h-64 items-center justify-end bg-cover p-8 md:h-96"
             style={{ backgroundImage: `url(${bgImage.src})` }}
           >
-            <div className={`font-oswald w-full text-left md:w-1/2 transition-transform ease-in-out duration-500 ${
+            <div className={`font-oswald text-white w-full text-left md:w-1/2 transition-transform ease-in-out duration-500 ${
         slideIn ? 'translate-x-0' : '-translate-x-full'}`}>
-              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
+              <h2 className="text-5xl font-bold md:text-5xl xl:text-7xl">
                 Online, Group,
               </h2>
 
-              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
+              <h2 className="text-5xl font-bold md:text-5xl xl:text-7xl">
                 & 1 on 1
               </h2>
 
-              <h2 className="text-4xl font-bold text-red-600 md:text-5xl xl:text-7xl">
+              <h2 className="text-5xl font-bold md:text-5xl xl:text-7xl">
                 Personal Training
               </h2>
             </div>
