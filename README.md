@@ -1,29 +1,71 @@
-# Create T3 App
+# Farinacci Fitness
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Marketing site for a personal training business — built and shipped as a freelance project for a friend's training studio.
 
-## What's next? How do I make an app with this?
+> **Live:** [farinaccifitness.com](https://www.farinaccifitness.com/) (also [farinacci-fitness.vercel.app](https://farinacci-fitness.vercel.app))
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## What it does
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- **Home** — hero, brand, calls to action
+- **About** — trainer bio + credentials
+- **Programs** — training program offerings
+- **Reviews** — client testimonials
+- **Contact** — form that emails the trainer via Nodemailer 
+- Mobile-responsive throughout
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Tech Stack
 
-## Learn More
+Built on the T3 stack:
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+| Layer | Tech |
+|---|---|
+| Framework | Next.js 13 (Pages Router) |
+| API | tRPC |
+| Email | Nodemailer (contact form) |
+| ORM | Prisma (SQLite for simplicity) |
+| Validation | Zod |
+| Styling | Tailwind CSS |
+| Language | TypeScript |
+| Hosting | Vercel + custom domain |
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Project Structure
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+```
+src/
+├── pages/         # _app, index, about, programs, reviews, contact
+├── components/    # shared UI
+├── server/        # tRPC routers (contact form submission)
+├── utils/         # tRPC client
+├── styles/        # global CSS
+└── videoData.ts   # workout video metadata
 
-## How do I deploy this?
+prisma/
+└── schema.prisma  # minimal — site is mostly static + email
+```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
-# farinacci_fitness
+## Getting Started
+
+```bash
+npm install
+cp .env.example .env
+# Fill: DATABASE_URL, EMAIL_USER, EMAIL_PASS (Nodemailer SMTP creds)
+npx prisma db push
+npm run dev
+```
+
+## Roadmap
+
+- [ ] Booking / scheduling integration (Calendly embed or custom)
+- [ ] Online program purchases (Stripe)
+- [ ] Blog / content section
+- [ ] Image gallery with optimization
+- [ ] Simple analytics dashboard for the trainer
+
+## What I Learned
+
+- Working with a real client — scoping, feedback loops, shipping to production
+- T3 stack for a content-heavy site (probably overkill, but learned the patterns)
+- Nodemailer for  form submissions
+- Embedded Facebook videos in React / NextJS
+- Domain config and DNS for a custom-domain Vercel deploy
+- Designing for a real person's brand, not my own taste
